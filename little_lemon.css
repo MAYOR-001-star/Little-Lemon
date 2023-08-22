@@ -1,0 +1,154 @@
+*{
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+    max-width: 97vw;
+    padding: 2vw;
+}
+
+.container header img{
+    display:block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+nav{
+    width: 84vw;
+    display: block;
+    margin: 2.5em auto;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    font-size: 0.99rem;
+    padding: 0.5em 0.13em;
+    background-color: #3a3737;
+    border-radius: 0.78em;
+}
+
+.nav-link{
+    list-style-type: none;
+    padding: 0 1.5rem;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 2.2vw;
+}
+
+.sect{
+    position: relative;
+}
+
+.sect img{
+    width: 90%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.aside{
+    position: absolute;
+    width: 80%;
+    top: 16%;
+    left: 10%;
+    font-size: 2vw;
+}
+.aside h1,.aside p{
+    color: #fff;
+    font-weight: 600;
+}
+h1{
+    font-size: 5vw;
+    margin-bottom: 2vw;
+}
+.aside p{
+    line-height: 3vw;
+}
+
+.selection{
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+    margin: 5vw 0;
+}
+
+.selection img{
+    width: 20vw;
+    margin: 0 auto;
+    display: block;
+}
+
+.selection div{
+    padding: 2vw;
+    border-radius: 2vw;
+    background-color: #f1c499;
+}
+
+.selection .menu-card p,.selection .booking-card p{
+    margin-bottom: 10vw;
+}
+
+.words{
+    margin-top: 2vw;
+} 
+
+.Opening-card,.booking-card,.menu-card{
+    width: 28vw;
+}
+
+.Opening-time{
+    text-align: center;
+}
+
+.Opening-time p{
+    margin-top: 1vw;
+}
+
+.selection div h2{
+    padding: 2vw;
+}
+
+footer{
+    display: flex;
+    margin: 2vw;
+    justify-content: space-between;
+}
+.footer-logo img{
+    width: 7vw;
+}
+.copyright{
+    align-self: center;
+    border-top: 2px ridge #3a3737;
+}
+.copyright p{
+    padding-left: 36vw;
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 700px) {
+    .selection{
+        flex-direction: column;
+        align-items: center;
+    }
+    .selection div{
+        padding: 1vw 3vw;
+        border-radius: 2vw;
+        background-color: #f1c499;
+        margin-bottom: 4vw;
+    }
+    .Opening-card, .booking-card, .menu-card {
+        width: 70vw;
+    }
+    .selection img {
+        width: 45vw;
+        height: 25vw;
+    }
+}
